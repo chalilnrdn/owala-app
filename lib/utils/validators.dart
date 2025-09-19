@@ -16,8 +16,8 @@ class Validators {
     return null;
   }
 
-  static String? validatePassword(String? value){
-    if (value == null || value.isEmpty){
+  static String? validatePassword(String? value) {
+    if (value == null || value.isEmpty) {
       return "Password is required";
     }
     return null;
@@ -25,7 +25,7 @@ class Validators {
 
   static String? validateConfirmPassword(String? value, String originalPassword) {
     if (value != originalPassword) {
-      return "Passwords do not match";
+      return "Password does not match";
     }
     return null;
   }
